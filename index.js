@@ -4,6 +4,7 @@ const app=express()
 const mongoose=require("mongoose")
 const cors = require('cors');
 const Product=require("./models/Product")
+const PORT=process.env.PORT||7500
 mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true,
   useUnifiedTopology: true,     
