@@ -35,12 +35,5 @@ router.get("/products/product/:id",(req,res)=>{
      console.log(err)   
     })
 })
-router.post("/products",(req,res)=>{
-    const newProduct=Product(req.body);
-    newProduct.save().then((data)=>{
-        res.status(200).send("Saved a product"+data);
-    }).catch((err)=>{
-        res.status(500).send("Failed to save a product");
-      }) 
- })
+
 module.exports=router;
