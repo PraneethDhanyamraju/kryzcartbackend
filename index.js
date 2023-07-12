@@ -16,5 +16,5 @@ app.use(cors());
 app.use("/",productRoutes)
 app.use("/",cartRoutes)
 app.listen(process.env.PORT||7500, () => {
-        console.log(`Server is listening on port 7500`);
+        console.log(`Server is listening on port ${PORT}`);
       });
